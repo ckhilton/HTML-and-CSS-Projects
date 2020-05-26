@@ -1,5 +1,0 @@
-table, th, td {border: 5px solid black;}
-td:hover {background-color: white; color: black; text-decoration: underline overline;} 
-tr, th {color: black; font-size: 200%; text-decoration: underline overline; background-color:green;}
-tr, td {color: blue; font-size: 150%; text-align: center;}
-.Style1 {color: red; font-size: 400%; text-align: center; text-decoration: underline;}
