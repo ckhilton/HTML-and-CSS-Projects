@@ -1,0 +1,10 @@
+summary {
+	color: red;
+	text-decoration: underline;
+	font-size: large;
+	text-shadow: 2px 1px black;
+}
+		
+p {
+	color: brown;
+}

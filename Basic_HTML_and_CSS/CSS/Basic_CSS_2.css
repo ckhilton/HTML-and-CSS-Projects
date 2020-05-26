@@ -1,0 +1,15 @@
+p {
+	color: green;
+	background: blue;
+	font-size: 250%;
+	text-align: center;
+	text-shadow: 4px 4px black;
+}
+
+#my_animation {
+	animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+	100% {text-shadow: 2px 2px red;}
+}
