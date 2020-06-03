@@ -1,0 +1,82 @@
+/*===========================
+  Author: C. Kirk Hilton
+============================*/
+
+/*====================================
+    GENERIC STYLE
+=====================================*/
+html {
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+body {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    line-height: 1;
+    background-color: #ADD8E6;
+    color: #00008B;
+}
+
+header,
+main,
+footer {
+    display: block;
+}
+
+.statement p {
+    font-weight: bold;
+    font-size: 20pt;
+    padding: 10px;
+    font-variant: small-caps;
+    color: red;
+}
+
+h1, h2, h3 {
+    font-family:'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-style: italic;
+}
+
+/*=============================================
+    LOGO WITH SITE
+==============================================*/
+.logo {
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    padding-top: 55px;
+    border: 2px dashed red;
+    background: black;
+}
+
+.site {
+    font-size: 14px;
+    background-color: black;
+    display: center;
+    padding: 25px;
+    z-index: 1;
+}
+
+.site a {
+    color: yellow;
+    cursor: pointer;
+}
+
+/*================================================
+    ORIENTATION VIDEO
+=================================================*/
+.video {
+    width: 600px;
+    height: 400px;
+    background-color: lightblue;
+    border-radius: 6px;
+}
