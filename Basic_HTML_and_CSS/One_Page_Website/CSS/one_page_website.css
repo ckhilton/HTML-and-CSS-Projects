@@ -16,6 +16,7 @@ h1 {
 	font-weight: bold;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 500%;
+    font-stretch: ultra-expanded
 }
 
 span {
@@ -28,6 +29,11 @@ p {
 	color: brown;
 	font-size: 150%;
     font-weight: bold;
+    padding: 2cm;
+}
+
+#home img {
+    width: 10%;
 }
 
 /*=======================================================
@@ -82,12 +88,6 @@ li a:hover {
     clear: both;
 }
   
-h1 {
-    font-size: 400%;
-    font-family: 'Piedra', cursive;
-    font-stretch: ultra-expanded;
-}
-
 /*=====================================================
     CONTACT INFO STYLE
 =======================================================*/
