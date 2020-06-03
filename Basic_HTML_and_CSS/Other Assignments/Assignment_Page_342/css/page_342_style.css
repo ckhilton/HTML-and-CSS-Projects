@@ -1,5 +1,5 @@
 /*===========================
-  Author: C. Kirk Hilton
+  AUTHOR: C. Kirk Hilton
 ============================*/
 
 /*====================================
@@ -71,12 +71,13 @@ p {
     cursor: pointer;
 }
 
-/*================================================
+/*==================================================
     ORIENTATION VIDEO
-=================================================*/
-.video {
+===================================================*/
+.video iframe {
+    display: block;
+    margin: auto;
     width: 600px;
-    height: 400px;
-    background-color: lightblue;
-    border-radius: 6px;
+    height: 300px;
+    border: 2px dashed red;
 }
