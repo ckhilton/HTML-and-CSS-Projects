@@ -1,0 +1,126 @@
+/*=======================================================
+    AUTHOR: C. KIRK HILTON
+========================================================*/
+
+/*======================================================
+    GENERIC STYLE
+=======================================================*/
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+	color: brown;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 500%;
+}
+
+span {
+    font-size: 400%;
+	font-weight: bold;
+    font-family: 'Piedra', cursive;
+}
+
+p {
+	color: brown;
+	font-size: 150%;
+    font-weight: bold;
+}
+
+/*=======================================================
+    NAV
+========================================================*/
+ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: red;
+	text-align: center;
+	padding: 30px 20px;
+	text-decoration: solid;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+/*=======================================================
+    PHOTOS STYLE
+=======================================================*/
+* {
+    box-sizing: border-box;
+  }
+  
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+  
+.column img {
+    margin-top: 12px;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+h1 {
+    font-size: 400%;
+    font-family: 'Piedra', cursive;
+    font-stretch: ultra-expanded;
+}
+
+/*=====================================================
+    CONTACT INFO STYLE
+=======================================================*/
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+}
+
+form {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
