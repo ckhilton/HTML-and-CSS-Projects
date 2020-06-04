@@ -5,10 +5,20 @@
 /*======================================================
     GENERIC STYLE
 =======================================================*/
+html {
+    scroll-padding-top: 20%;
+}
+
 body {
-    margin: 0;
     font-family: Arial;
     text-align: center;
+}
+
+footer {
+    color: brown;
+	font-size: 150%;
+    font-weight: bold;
+    padding: 1cm;
 }
 
 h1 {
@@ -16,20 +26,26 @@ h1 {
 	font-weight: bold;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 500%;
-    font-stretch: ultra-expanded
+    font-stretch: ultra-expanded;
 }
 
 span {
     font-size: 400%;
 	font-weight: bold;
     font-family: 'Piedra', cursive;
+    padding-bottom: 6cm;
 }
 
 p {
 	color: brown;
 	font-size: 150%;
     font-weight: bold;
-    padding: 2cm;
+    padding-top: 2cm;
+    padding-bottom: 6cm;
+}
+
+#home h1 {
+    margin-top: 10%;
 }
 
 #home img {
@@ -40,27 +56,29 @@ p {
     NAV
 ========================================================*/
 ul {
+    top: 0;
+    width: 100%;
     list-style-type: none;
-	margin: 0;
+	margin: 0% auto;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+    background-color: #111;
+    position: fixed;
+    z-index: 100;
 }
 
 li {
-	float: left;
-}
-
-li a {
-	display: block;
-	color: red;
-	text-align: center;
+    margin-left: 10px;
+    float: left;
+    color: brown;
+    font-weight: bolder; 
+    text-align: center;
 	padding: 30px 20px;
 	text-decoration: solid;
 }
 
-li a:hover {
-	background-color: #111;
+a li:hover {
+	background-color: #333;
 }
 
 /*=======================================================
@@ -68,17 +86,18 @@ li a:hover {
 =======================================================*/
 * {
     box-sizing: border-box;
-  }
+}
   
 /* Create two equal columns that float next to each other */
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding-left: 0;
+    padding-right: 4px;
 }
   
 .column img {
-    margin-top: 12px;
+    margin-top: 0;
 }
   
 /* Clear floats after the columns */
@@ -96,12 +115,21 @@ li a:hover {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: left;
+    width: 100%;
 }
 
-form {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 250px;
+}
 
-input[type=text], select, textarea {
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], 
+select, 
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
