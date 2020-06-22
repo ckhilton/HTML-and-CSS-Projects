@@ -4,6 +4,7 @@
 		<title>One Page Website</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 		
 	<body>
@@ -33,24 +34,183 @@
 				
 			<!-- Photo Grid -->
 			<div class="row">
+
 				<div class="column">
-					<img src="./thumb/thumbnail_1.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_2.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_3.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_4.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_5.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_6.jpg" width="100%" alt="Unavailable">
+					<img src="./thumb/thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 				</div>
-						
+			
 				<div class="column">
-					<img src="./thumb/thumbnail_7.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_8.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_9.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_10.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_11.jpg" width="100%" alt="Unavailable">
-					<img src="./thumb/thumbnail_12.jpg" width="100%" alt="Unavailable">
-				</div>					
-			</div><br>
+					<img src="./thumb/thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				</div>
+				
+				<div class="column">
+					<img src="./thumb/thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				</div>  
+				
+				<div class="column">    
+					<img src="./thumb/thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				</div>
+					
+				<div class="column">
+					<img src="./thumb/thumbnail_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+				</div> 
+					
+				<div class="column">
+					<img src="./thumb/thumbnail_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+				</div>
+		
+				<div class="column">
+					<img src="./thumb/thumbnail_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+				</div>
+		
+				<div class="column">
+					<img src="./thumb/thumbnail_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+				</div>
+		
+				<div class="column">
+					<img src="./thumb/thumbnail_9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+				</div>
+					
+				<div class="column">
+					<img src="./thumb/thumbnail_10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+				</div>
+					
+				<div class="column">
+					<img src="./thumb/thumbnail_11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+				</div>
+					
+				<div class="column">
+					<img src="./thumb/thumbnail_12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+				</div>
+		
+			</div>
+		
+			<div id="myModal" class="modal">
+		
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+		
+				<div class="modal-content">
+
+					<p id="caption"></p><br>
+		
+					<div class="mySlides">
+						<div class="numbertext">1 / 12</div>
+						<img src="./thumb/thumbnail_1.jpg">
+					</div>
+		
+					<div class="mySlides">
+						<div class="numbertext">2 / 12</div>
+						<img src="./thumb/thumbnail_2.jpg">
+					</div>
+		
+					<div class="mySlides">
+						<div class="numbertext">3 / 12</div>
+						<img src="./thumb/thumbnail_3.jpg">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">4 / 12</div>
+						<img src="./thumb/thumbnail_4.jpg">
+					</div>
+		
+					<div class="mySlides">
+						<div class="numbertext">5 / 12</div>
+						<img src="./thumb/thumbnail_5.jpg">
+					</div>
+		
+					<div class="mySlides">
+					<div class="numbertext">6 / 12</div>
+					<img src="./thumb/thumbnail_6.jpg">
+					</div>
+		
+					<div class="mySlides">
+					<div class="numbertext">7 / 12</div>
+					<img src="./thumb/thumbnail_7.jpg">
+					</div>
+		
+					<div class="mySlides">
+					<div class="numbertext">8 / 12</div>
+					<img src="./thumb/thumbnail_8.jpg">
+					</div>
+		
+					<div class="mySlides">
+					<div class="numbertext">9 / 12</div>
+					<img src="./thumb/thumbnail_9.jpg">
+					</div>
+		
+					<div class="mySlides">
+					<div class="numbertext">10 / 12</div>
+					<img src="./thumb/thumbnail_10.jpg">
+					</div>
+		
+					<div class="mySlides">
+					<div class="numbertext">11 / 12</div>
+					<img src="./thumb/thumbnail_11.jpg">
+					</div>
+		
+					<div class="mySlides">
+					<div class="numbertext">12 / 12</div>
+					<img src="./thumb/thumbnail_12.jpg">
+					</div>
+		
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+				</div>
+		
+				<div class="thumbs">
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Castleton Tower - Castle Valley, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="&quotTingey's Terror&quot - Little Cottonwood Canyon, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Portaledge on &quotThe Coffin&quot - Little Cottonwood Canyon, UT" >
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="&quotPine Line&quot - Yosemite National Park, CA">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="&quotAfter the Fall&quot - Little Cottonwood Canyon, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="&quotPentapitch&quot - Little Cottonwood Canyon, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Atop &quotKamp's Ridge&quot - Neff's Canyon, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="&quotSasquatch&quot - Little Cottonwood Canyon, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Ascending fixed ropes - Big Cottonwood Canyon, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Atop Mt. Olympus - Salt Lake City, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Atop &quotWorthy Woopsie&quot - Big Cottonwood Canyon, UT">
+					</div>
+
+					<div class="thumb_column">
+						<img class="demo cursor" src="./thumb/thumbnail_12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Summit of Middle Teton - Grand Teton National Park, WY">
+					</div>
+		
+				</div>
+				
+			</div>
 			<!-- End Photo Grid -->
 					
 		</div>
@@ -63,18 +223,19 @@
 			</h1>
 				<div>
 					<iframe width="800" height="500" src="https://www.youtube.com/embed/haaTD2ZeMbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
-					<iframe width="800" height="500" src="https://www.youtube.com/embed/MU3PF1iVyBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+					<iframe width="800" height="500" src="https://www.youtube.com/embed/w1V-x7FLKfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
 					<iframe width="800" height="500" src="https://www.youtube.com/embed/8Vw212Z1k8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
 				</div>
 			<h1>
-				LET US TELL YOUR STORY!
+				LET US TELL YOUR STORY!s
 			</h1>
 		</div>
 		<!-- End Videos -->
 					
 		<!-- Booking -->
 		<div id="contact">
-			<span>CONTACT US TO BE FEATURED!</span>
+
+			<span>CONTACT US TO BE FEATURED!</span><br><br>
 				
 			<!-- Contact Form -->
 			<div class="container">

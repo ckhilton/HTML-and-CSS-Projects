@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="CSS/lightbox.css">
+        <script type="text/javascript" src="JS/PRACTICE.js" defer></script>
+        
+    </head>
+                        
+    <body>
+
+    <h2 style="text-align:center">Lightbox</h2>
+
+    <div class="row">
+
+        <div class="column">
+            <img src="./thumb/thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+    
+        <div class="column">
+            <img src="./thumb/thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        
+        <div class="column">
+            <img src="./thumb/thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>  
+        
+        <div class="column">    
+            <img src="./thumb/thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+            
+        <div class="column">
+            <img src="./thumb/thumbnail_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div> 
+            
+        <div class="column">
+            <img src="./thumb/thumbnail_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+            <img src="./thumb/thumbnail_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+            <img src="./thumb/thumbnail_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+            <img src="./thumb/thumbnail_9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </div>
+            
+        <div class="column">
+            <img src="./thumb/thumbnail_10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </div>
+            
+        <div class="column">
+            <img src="./thumb/thumbnail_11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        </div>
+            
+        <div class="column">
+            <img src="./thumb/thumbnail_12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+
+            <div class="mySlides">
+            <div class="numbertext">1 / 12</div>
+            <img src="./thumb/thumbnail_1_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">2 / 12</div>
+            <img src="./thumb/thumbnail_2_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">3 / 12</div>
+            <img src="./thumb/thumbnail_3_wide.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+            <div class="numbertext">4 / 12</div>
+            <img src="./thumb/thumbnail_4_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">5 / 12</div>
+            <img src="./thumb/thumbnail_5_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">6 / 12</div>
+            <img src="./thumb/thumbnail_6_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">7 / 12</div>
+            <img src="./thumb/thumbnail_7_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">8 / 12</div>
+            <img src="./thumb/thumbnail_8_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">9 / 12</div>
+            <img src="./thumb/thumbnail_9_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">10 / 12</div>
+            <img src="./thumb/thumbnail_10_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">11 / 12</div>
+            <img src="./thumb/thumbnail_11_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">12 / 12</div>
+            <img src="./thumb/thumbnail_12_wide.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container"></div>
+            <p id="caption"></p>
+            
+        </div>
+
+
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_1_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_2_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_3_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_4_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_5_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_6_wide.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_7_wide.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_8_wide.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_9_wide.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_10_wide.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_11_wide.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./thumb/thumbnail_12_wide.jpg" style="width:100%" onclick="currentSlide(12)" alt="">
+        </div>
+
+        </div>
+        </div>
+    </body>
+</html>

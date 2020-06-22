@@ -29,11 +29,11 @@ h1 {
     font-stretch: ultra-expanded;
 }
 
-span {
-    font-size: 400%;
+#contact {
+    font-size: 30px;
 	font-weight: bold;
     font-family: 'Piedra', cursive;
-    padding-bottom: 6cm;
+    padding-bottom: 1cm;
 }
 
 p {
@@ -64,49 +64,203 @@ ul {
 	overflow: hidden;
     background-color: #111;
     position: fixed;
-    z-index: 100;
+    z-index: 1;
+    left: 0;
 }
 
 li {
-    margin-left: 10px;
+    margin-left: 0;
     float: left;
-    color: brown;
+    color: rgb(214, 24, 24);
     font-weight: bolder; 
     text-align: center;
-	padding: 30px 20px;
+	padding: 20px 20px;
 	text-decoration: solid;
 }
 
 a li:hover {
-	background-color: #333;
+	background-color: rgb(185, 185, 185);
 }
 
-/*=======================================================
+/*======================================================
     PHOTOS STYLE
 =======================================================*/
 * {
     box-sizing: border-box;
 }
-  
-/* Create two equal columns that float next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding-left: 8px;
-    padding-right: 0;
-}
-  
-.column img {
-    margin-top: 4px;
-}
-  
-/* Clear floats after the columns */
+    
+.row > .column {
+    padding: 0 8px;
+    }
+    
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-  
+    
+.column {
+        float: left;
+        width: 25%;
+        padding-left: 8px;
+        padding-right: 0;
+    }
+      
+.column img {
+        margin-top: 12px;
+}
+      
+/*----- BACKGROUND OF THE MODAL -------*/
+    
+#myModal {
+    text-align: center;
+}
+.modal {
+    display: none;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    padding-top: 30px;
+    padding-left: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/*--------- CONTENT INSIDE THE MODAL ---------*/
+.modal-content {
+    position: relative;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 0;
+    width: 90%;
+    max-width: 100%;
+    height: 70%;
+}
+   
+.thumbs {
+    padding-block-start: inherit;
+    padding-left: 1%;
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
+.thumb_column {
+    display: block;
+    float: left;
+    width: 8%;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 0;
+    margin-bottom: 10px;
+}      
+
+/*--------- BUTTON TO CLOSE THE MODAL WINDOW ---------*/
+.close {
+    color: rgb(214, 24, 24);
+    position: absolute;
+    top: 2%;
+    bottom: 90%;
+    right: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    z-index: 15;
+}
+    
+.close:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+.mySlides {
+    padding-left: 30%;
+    display: none;
+    width: 80%;
+    height: 100%; 
+}
+    
+.mySlides img {
+    width: 100%;
+    height: 95%;
+    padding-bottom: 5%;
+}
+.cursor {
+    cursor: pointer;
+}
+    
+/*---------- NEXT AND PREVIOUS SLIDESHOW BUTTONS ----------*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(214, 24, 24);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+    
+/*--------- SETS THE POSITIONING OF THE 'NEXT' BUTTON ------*/
+.next {
+    right: 15%;
+}
+
+.prev {
+    right: 72%;
+}
+    
+/*------- ADDS SLIGHTLY TRANSPARENT BLACK BACKGROUND ON PREV/NEXT HOVER ---------*/
+.prev:hover, .next:hover {
+    color: white;
+}
+    
+/*------- SLIDESHOW NUMBERS IN TOP CORNER ('1 OF 12') --------*/
+.numbertext {
+    color: rgb(214, 24, 24);
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+}
+
+.modal-content #caption {
+    color: red;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 15px;
+    padding: 5px;
+    padding-left: 11%;
+}
+
+img {
+    margin-bottom: -4px;
+}
+    
+.demo {
+    opacity: 0.6;
+}
+    
+.active, .demo:hover {
+    opacity: 1;
+}
+    
+img.hover-shadow {
+    transition: 0.3s;
+}
+    
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}    
+
 /*=====================================================
     CONTACT INFO STYLE
 =======================================================*/
@@ -127,9 +281,7 @@ form {
     box-sizing: border-box;
 }
 
-input[type=text], 
-select, 
-textarea {
+input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
