@@ -1,274 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
+<head>
 
-		<title>KIRK HILTON</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="CSS/portfolio_website.css">
-		<script src="JS/portfolio_website.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>KIRK HILTON</title>
+	<link rel="stylesheet" type="text/css" href="CSS/portfolio_website.css">
+	<script rel="text/javascript" src="JS/portfolio_website.js" defer></script>
 
-	</head>
+</head>
 
-	<body class="Background"> 
+<body>
 
-		<!-- FADE IN -->
-		<script>
-			document.body.className += ' fade-out';
-			$(function() {
-				$('body').removeClass('fade-out');
-			}
-		);
-		
-		</script>
+	<!-- NAVBAR -->
+	<div class="Navbar">
 
-		<!-- NAVBAR -->
-		<div class="Navbar">
+		<a class="active" href="#Home">Home</a>
+		<a href="#About">About</a>
+		<a href="#Skills">Skills</a>
+		<a href="#Media">Social Media</a>
+		<a onclick="openForm()">Contact</a>
 
-			<a class="active" href="#Home">Home</a> 
-			<a href="#About">About</a>
-			<a href="#Skills">Skills</a>
-			<a href="#Media">Media</a>
-			<a onclick="openForm()">Contact</a>
+	</div>
+	<!-- /NAVBAR -->
 
-		</div>
+	<!-- VIDEO AREA -->
+	<div id="Home">
 
-		<div class="btn cancel" onclick="closeForm()">
-		<!-- /NAVBAR -->
-
-		<!-- VIDEO AREA -->
-		<div id="Home">
-
-			<video autoplay muted loop id="Background_Video"> 
-
-				<source src="Video/Waves.mp4" type="video/mp4">
-
-			</video>
-
-		</div>
+		<video autoplay muted loop id="Background_Video">
+			<source src="Video/Waves.mp4" type="video/mp4">
+				HTML5 video not supported by your browser
+		</video>
 
 		<div class="Video_Text">
 
-            <h1>C. Kirk Hilton</h1>
-			<h2>~&nbsp;"Everything should be made as simple as possible..." -&nbsp;Albert Einstein&nbsp;~</h2><br><br>
+			<h1>Kirk Hilton</h1>
+			<p>~ WEB DEVELOPER ~</p>
 
 		</div>
-		<!-- /VIDEO AREA -->
 
-		<!-- MAIN BODY COLUMNS -->
-		<div class="Row" id="About"> 
+	</div>
+	<!-- /VIDEO AREA -->
 
-			<div class="Column_1">
+	<!-- MAIN BODY ROW 1 -->
+	<div class="Row_1" id="About">
 
-				<img src="Images/family.jpg" alt="Family Pic">
+		<div class="Column_1">
 
+			<img src="Images/family.jpg" alt="Family Pic">
+
+		</div>
+
+		<div class="Column_2">
+
+			<h3>About Me</h3>
+
+			<p>
+
+				<br>I'm a software developer who loves to code!<br>
+				<br>I'm also a father, husband, and rock climber who enjoys spending time with my family and friends
+				outdoors.<br>
+				<br> As a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+					Academy</a>, I've been trained in HTML, CSS, JavaScript, SQL, Python, C#, and more.<br>
+				<br>As a full-stack developer, I would love to work with you on your project.&nbsp;<a
+					onclick="openForm()" href="#Contact">Contact me now!</a>
+
+			</p>
+
+		</div>
+
+	</div>
+
+	<!-- MAIN BODY ROW 2 -->
+	<div class="Row_2" id="Skills">
+
+		<div class="Column_3">
+			<div id="Slideshow">
+				<div id="Slideshow_Background">
+					<div id="Slideshow_Container">
+
+						<h5>Skills</h5>
+
+						<div class="mySlides fade">
+							<img class="Slide_Show_Images" src="Images/HTML_CSS_and_JavaScript.jpeg" style="width:90%" alt="Image">
+						</div>
+
+						<div class="mySlides fade">
+							<img class="Slide_Show_Images" src="Images/Python.png" style="width:90%" alt="Image">
+						</div>
+
+						<div class="mySlides fade">
+							<img class="Slide_Show_Images" src="Images/C_Sharp_and_Dot_NET.png" style="width:90%" alt="Image">
+						</div>
+
+						<div class="mySlides fade">
+							<img class="Slide_Show_Images" src="Images/SQL_and_Database.jpg" style="width:90%" alt="Image">
+						</div>
+
+						<div class="mySlides fade">
+							<img class="Slide_Show_Images" src="Images/Coding_1.jpg" style="width:90%" alt="Image">
+							<div class="text-overlay">
+								<a onclick="openForm()" href="#Contact">CONTACT NOW!</a>
+							</div>
+						</div>
+
+						<div class="dot-align">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(4)"></span>
+							<span class="dot" onclick="currentSlide(5)"></span>
+						</div>
+
+						<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+				</div>
 			</div>
+		</div>
+
+		<div class="Column_4">
+
+			<img src="Images/Development.jpg" alt="Development Image">
+
+		</div>
+
+	</div>
+
+	<!-- MAIN BODY ROW 3 -->
+	<div class="Row_3" id="Media">
+
+		<div class="Column_5" id="Github">
+
+			<img src="Images/GitHub.png" alt="media">
+			<p>VIEW MY GITHUB PROJECTS HERE:<br>
+				<a href="https://github.com/ckhilton" target="_blank"><br>MY GITHUB</a>
+			</p>
+
+		</div>
+
+		<div class="Column_6">
+
+				<div class="media_container_top">
+						<a href="https://www.facebook.com/kirk.hilton.39" target="_blank"><img src="Images/facebook.png" alt="Image"></a>
+						<a href="https://www.instagram.com/kirk_hilton/" target="_blank"><img src="Images/instagram.png" alt="Image"></a>
+				</div>
+
+				<div class="media_container_bottom">
+						<a href="https://www.linkedin.com/in/kirk-hilton/" target="_blank"><img src="Images/linkedin.png" alt="Image"></a>
+						<a href="https://www.youtube.com/channel/UCAeNVpSmLOO76854OMPe1QQ" target="_blank"><img src="Images/youtube.png"></a>
+						<p>CLICK A LOGO TO LEARN MORE ABOUT ME</p>
+				</div>
+
+				
+
+		</div>
+
+	</div>
+
+	<!-- CONTACT FORM -->
+	<div id="Contact">
+
+		<button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+
+		<div class="form-popup" id="myForm">
+
+			<form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+				<!-- FREE FORM SUBMISSION SERVICE FROM https://formspree.io/ MUST BE LIVE TO WORK -->
+				<label for="name">Name</label>
+				<input type="text" placeholder="Type your name here" name="name" required>
+
+				<label for="phone">Phone</label>
+				<input type="text" placeholder="Enter your phone number here" name="phone">
+
+				<label for="email">Email</label>
+				<input type="text" placeholder="Type your email address here" name="email" required>
+
+				<label for="message">Message</label>
+				<input type="text" placeholder="Type your message here" name="message">
+
+				<button type="submit" class="btn">SUBMIT</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+
+		<p>&copy; Kirk Hilton, 2020</p>
+	</footer>
 	
-			<div class="Column_2">
+	<!-- /FOOTER -->
 
-				<h3>About</h3>
-
-				<p>
-
-					<br>I'm a software developer who loves to code!<br>
-					<br>I'm also a father, husband, and rock climber who enjoys spending time with my family and friends outdoors.<br>
-					<br> As a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>, I've been trained in HTML, CSS, JavaScript, SQL, Python, C#, and more.<br>
-					<br>As a full-stack developer, I would love to work with you on your project.&nbsp;<a href="#Contact">Contact</a> me below!
-				
-				</p>
-
-			</div>
-			
-		</div>
-
-		<div class="Row" id="Skills">
-
-			<div class="Column_3">
-
-				<!-- Slideshow section -->
-				<div id="Slideshow">
-					<div id="Slideshow_Background"> 
-						<div id="Slideshow_Container">
-
-							<h5>Skills</h5> 
-							
-							<div class="mySlides fade">
-								<div class="Slide_Number">1 / 5</div>
-								<img class="Slide_Show_Images" src="Images/HTML_CSS_and_JavaScript.jpeg" style="width:90%">
-							</div>
-
-							<div class="mySlides fade">
-								<div class="Slide_Number">2 / 5</div>
-								<img class="Slide_Show_Images" src="Images/Python.png" style="width:90%">
-							</div>
-
-							<div class="mySlides fade">
-								<div class="Slide_Number">3 / 5</div>
-								<img class="Slide_Show_Images" src="Images/C_Sharp_and_Dot_NET.png" style="width:90%">
-							</div>
-
-							<div class="mySlides fade">
-								<div class="Slide_Number">4 / 5</div>
-								<img class="Slide_Show_Images" src="Images/SQL_and_Database.jpg" style="width:90%">
-							</div>
-
-
-							<div class="mySlides fade">
-								<div class="Slide_Number">5 / 5</div>
-								<img class="Slide_Show_Images" src="Images/Coding_1.jpg" style="width:90%">
-								<div class="text-overlay"> 
-									<a onclick="openForm()" href="#Contact">CONTACT ME NOW!</a>
-								</div>
-							</div>
-								
-							<div class="dot-align">
-				
-								<span class="dot" onclick="currentSlide(1)"></span> 
-								<span class="dot" onclick="currentSlide(2)"></span> 
-								<span class="dot" onclick="currentSlide(3)"></span> 
-								<span class="dot" onclick="currentSlide(4)"></span>
-								<span class="dot" onclick="currentSlide(5)"></span> 
-		
-							</div>
-							
-							<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="Next" onclick="plusSlides(1)">&#10095;</a>
-								
-						</div>
-
-					</div>
-						
-				</div>
-
-				<!-- We included our JS function within this file to ensure it was given precedence, this function covers the slideshow -->
-				<script>
-					var slideIndex = 1;
-					showSlides(slideIndex);
-					function plusSlides(n) {
-					showSlides(slideIndex += n);
-					}
-					function currentSlide(n) {
-					showSlides(slideIndex = n);
-					}
-					function showSlides(n) {
-						var i;
-						var slides = document.getElementsByClassName("mySlides");
-						var dots = document.getElementsByClassName("dot");
-							if (n > slides.length) {slideIndex = 1}    
-							if (n < 1) {slideIndex = slides.length}
-							for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";  
-							}
-							for (i = 0; i < dots.length; i++) {
-								dots[i].className = dots[i].className.replace(" active", "");
-							}
-						slides[slideIndex-1].style.display = "block";  
-						dots[slideIndex-1].className += " active";
-					}
-				</script>
-
-			</div>
-
-			<div class="Column_4">
-
-				<img src="Images/Development.jpg" alt="Development Image">
-
-			</div>
-
-		</div>
-
-		<div class="Row" id="Github"> 
-
-			<div class="Column_5">
-
-				<img src="Images/GitHub.png" alt="media">
-				<p>You can view my projects GitHub here:<br>
-					<center><a href="https://github.com/ckhilton" target="_blank">MY GITHUB</a></center></p>
-				
-			</div>
-		
-			<div class="Column_6"> 
-
-				<h5 onclick="openForm()" href="#Contact">CONTACT ME NOW</h5> 
-
-				<form action="get" method="get">
-
-					<label>NAME:</label>
-					<input type="text" placeholder="Your Name">
-					<label>EMAIL:</label>
-					<input type="text" id="Email" name="Email" placeholder="Email Address">
-					<label>MESSAGE:</label>
-					<input type="text" id="Message" name="Message" placeholder="Type your message here.."><br><br>
-					<input type="submit" value="Submit">
-
-				</form>
-
-			</div>
-
-		</div>
-		<!-- /MAIN BODY COLUMNS -->
-		
-		<!-- Contact section -->
-		<div id="Contact"> 
-			<button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-			  <div class="form-popup" id="myForm">
-				<form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-				<h1>Contact</h1>
-					<label for="name"><b>Name</b></label>
-					  <input type="text" placeholder="Type your name here" name="name" required>
-					<label for="phone"><b>Phone</b></label>
-					  <input type="text" placeholder="Enter your phone number here" name="phone">
-					<label for="email"><b>Email</b></label>		
-					  <input type="text" placeholder="Type your email address here" name="email" required>
-					<label for="message"><b>Message</b></label>
-					  <input type="text" placeholder="Type your message here" name="message">
-		 
-			<button type="submit" class="btn">SUBMIT</button>
-			<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-				</form>
-			  </div>
-		  </div>
-
-		<!-- FOOTER -->
-		<footer>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<span class="copyright">Copyright © C. Kirk Hilton 2020, All Rights Reserved</span>
-						</div>
-						<div class="col-md-4">
-							<ul class="list-inline social-buttons">
-								
-								<li><a href="https://www.facebook.com/kirk.hilton.39" target="_blank"><i class="fa fa-facebook"></i></a>
-								</li>
-								
-								<li><a href="https://www.instagram.com/kirk_hilton/" target="_blank"><i class="fa fa-instagram"></i></a>
-								</li>
-								
-								<li><a href="https://www.linkedin.com/in/kirk-hilton/" target="_blank"><i class="fa fa-linkedin"></i></a>
-								</li>
-								
-								<li><a href="http://github.com/ckhilton" target="_blank"><i class="fa fa-github"></i></a>
-								</li>
-								
-							</ul>
-						</div>
-						<div class="col-md-4">
-							<ul class="list-inline quicklinks">
-								<li><a href="#">Privacy Policy</a>
-								</li>
-								<li><a href="#">Terms of Use</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
-		<!-- /FOOTER -->
-	 
-	</body>
+</body>
 
 </html>
